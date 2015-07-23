@@ -1,0 +1,122 @@
+---
+title: "Code book"
+author: "Stu Pollack"
+date: "July 23, 2015"
+output: pdf_document
+---
+
+Data cleaning and organization overview overview:
+
+1) the training and the test datasets are stacked
+2) subject ids are added
+3) activities are added
+3) activity labels are added
+4) descriptive variable names are added
+5) keep only variable names containing "mean()" or "std()"
+6) calculated mean of each variable for each subject/activity
+
+For more information see the Reamed.Rmd file and the
+run_analysis.R program both are also contained in this repo.
+
+There are 68 variables in this summarized data set.
+
+Each measurement is in its own column and each subject's activity is in one row.
+
+The following is a data dictionary.
+
+ "subject_id" = This is the subject number [1-30]                  
+ "activity"   = This is the activity that was measured  
+                [STANDING   SITTING  LAYING  WALKING WALKING DOWNSTAIRS  WALKING UPSTAIRS]  
+    
+    
+ All the variables represent either mean or standard deviation values.    
+    
+                
+ "tBodyAcc-mean()-X"        = Time domain acceleration in the x, y and z planes       
+ "tBodyAcc-mean()-Y"           
+ "tBodyAcc-mean()-Z"           
+ 
+ "tGravityAcc-mean()-X"     = Time domain angular velocity in the x, y and z planes      
+ "tGravityAcc-mean()-Y"        
+ "tGravityAcc-mean()-Z"        
+ 
+ "tBodyAccJerk-mean()-X"    = Time domain linear acceleration and angular velocity used to     
+ "tBodyAccJerk-mean()-Y"      calculate jerk motion in the x, y, and z planes,  
+ "tBodyAccJerk-mean()-Z"       
+ 
+ "tBodyGyro-mean()-X"       = Time domain orientation in the x, y, and z planes       
+ "tBodyGyro-mean()-Y"          
+ "tBodyGyro-mean()-Z"          
+ 
+ "tBodyGyroJerk-mean()-X"   = Time domain derived Jerk Motion in the x, y, and z plane   
+ "tBodyGyroJerk-mean()-Y"
+ "tBodyGyroJerk-mean()-Z"      
+ 
+ "tBodyAccMag-mean()"       = The magnitude of the respective signals
+ "tGravityAccMag-mean()"       
+ "tBodyAccJerkMag-mean()"     
+ "tBodyGyroMag-mean()"        
+ "tBodyGyroJerkMag-mean()"    
+ 
+ "fBodyAcc-mean()-X"        = Frequency domain acceleration in the x, y and z planes
+ "fBodyAcc-mean()-Y"          
+ "fBodyAcc-mean()-Z"      
+ 
+ "fBodyAccJerk-mean()-X"    =  Frequency domain linear acceleration and angular velocity used to
+ "fBodyAccJerk-mean()-Y"       calculate jerk motion in the x, y, and z planes,
+ "fBodyAccJerk-mean()-Z"  
+ 
+ "fBodyGyro-mean()-X"       = Frequency domain orientation in the x, y, and z planes
+ "fBodyGyro-mean()-Y"         
+ "fBodyGyro-mean()-Z"
+ 
+ "fBodyAccMag-mean()"       = Frequency domain orientation in the x, y, and z planes
+ "fBodyBodyAccJerkMag-mean()"
+ "fBodyBodyGyroMag-mean()"   
+ "fBodyBodyGyroJerkMag-mean()" 
+ 
+ These are the standard deviation vales
+ ======================================
+ 
+ "tBodyAcc-std()-X"         = Time domain acceleration in the x, y and z planes  
+ "tBodyAcc-std()-Y"            
+ "tBodyAcc-std()-Z"            
+ 
+ "tGravityAcc-std()-X"      = Time domain angular velocity in the x, y and z plan
+ "tGravityAcc-std()-Y"    
+ "tGravityAcc-std()-Z"
+ 
+ "tBodyAccJerk-std()-X"     = Time domain derived Jerk Motion in the x, y, and z plane 
+ "tBodyAccJerk-std()-Y"
+ "tBodyAccJerk-std()-Z"
+ 
+ "tBodyGyro-std()-X"        = Time domain orientation in the x, y, and z planes
+ "tBodyGyro-std()-Y"
+ "tBodyGyro-std()-Z"
+
+ "tBodyGyroJerk-std()-X"    = Time domain derived Jerk Motion in the x, y, and z plane   
+ "tBodyGyroJerk-std()-Y"
+ "tBodyGyroJerk-std()-Z"
+ 
+ "tBodyAccMag-std()"        = The magnitude of the respective signals  
+ "tGravityAccMag-std()"
+ "tBodyAccJerkMag-std()"
+ "tBodyGyroMag-std()"         
+ "tBodyGyroJerkMag-std()"
+
+ "fBodyAcc-std()-X"         = Frequency domain acceleration in the x, y and z planes
+ "fBodyAcc-std()-Y"
+ "fBodyAcc-std()-Z"
+
+ "fBodyAccJerk-std()-X"     = Frequency domain linear acceleration and angular velocity used to
+ "fBodyAccJerk-std()-Y"       calculate jerk motion in the x, y, and z planes
+ "fBodyAccJerk-std()-Z"
+
+ "fBodyGyro-std()-X"        = Frequency domain orientation in the x, y, and z planes
+ "fBodyGyro-std()-Y"          
+ "fBodyGyro-std()-Z"
+
+ "fBodyAccMag-std()"        = Frequency domain orientation in the x, y, and z planes
+ "fBodyBodyAccJerkMag-std()"  
+ "fBodyBodyGyroMag-std()"
+ "fBodyBodyGyroJerkMag-std()" 
